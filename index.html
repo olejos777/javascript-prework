@@ -3,17 +3,149 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+  <link href="https://fonts.googleapis.com/css?family=Caladea:400,400i,700|Dancing+Script|Francois+One&display=swap&subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/bootstrap-grid.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-      <button id="play-rock">kamień</button>
-      <button id="play-paper">papier</button> 
-      <button id="play-scisors">nożyce</button> 
+	<section class="splash">
+	  <div class="container background-image">
+      <div class="row header">
+        <div class="col-lg-3">
+          <a href="#" class="logo">Javascript-prework</a>
+        </div>
+        <div class="col-lg-9">
+          <ul class="row">
+            <li class="menu-buttons">
+              <a href="#">Game instructions</a>
+            </li>
+            <li class="menu-buttons">
+              <a href="#">Play</a>
+            </li>
+            <li class="menu-buttons">
+              <a href="#">Results</a>
+            </li>
+            <li class="menu-buttons">
+              <a href="#">About us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h1>Do you wanna play the game</h1>
     </div>
-		<div id="messages"></div>
-	</div>
+  </section>
+  <section class="game-instructions">
+    <div class="container">
+      <h2>Games instructions</h2>
+      <div class="row">
+        <div class="col-lg-4 instruction-image">
+          <div class="image">
+            <img src="images/Paper.jpg" alt="move1" title="Paper">
+          </div>
+        </div>
+        <div class="col-lg-4 instruction-image">
+          <div class="image">
+            <img src="images/Rock.jpg" alt="move1" title="Paper">
+          </div>
+        </div>
+        <div class="col-lg-4 instruction-image">
+          <div class="image">
+            <img src="images/Scisors.jpg" alt="move1" title="Paper">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 instruction-image">
+          <div class="image">
+            <img src="images/Paper_vs_rock.jpg" alt="move1" title="Paper">
+          </div>
+        </div>
+        <div class="col-lg-8 instruction-content">  
+          <h4>Papier vs Kamień</h4>
+          <p>Papier jest silniejszy od kamienia, ponieważ go owija. Jeżeli wylosujesz papiera Twój przeciwnik wylosuje kamień to wygrwasz</p>      
+        </div>
+      </div>>
+      <div class="row">
+        <div class="col-lg-4 instruction-image">
+          <div class="image">
+            <img src="images/Scisors_vs_paper.jpg" alt="move1" title="Paper">
+          </div>
+        </div>
+        <div class="col-lg-8 instruction-content">
+          <h4>Nożyce vs Papier</h4>
+          <p>Nożyce są silniejsze od papieru, ponieważ go tną. Jeżeli wylosujesz nożyce a Twój przeciwnik wylosuje papier to wygrwasz</p>
+        </div>
+      </div>>
+      <div class="row">
+        <div class="col-lg-4 instruction-image">
+          <div class="image">
+            <img src="images/Rock_vs_scisors.jpg" alt="move1" title="Paper">
+          </div>
+        </div>
+        <div class="col-lg-8 instruction-content">
+          <h4>Kamień vs Nożyce</h4>
+          <p>Kamień jest silniejszy od nożyc, ponieważ je tępi. Jeżeli wylosujesz kamień a Twój przeciwnik wylosuje nożyce to wygrwasz</p>
+        </div>
+      </div>>
+    </div>
+  </section>
+	<secion class="play-section">
+    <div class="container">
+	    <div id="buttons">
+        <button id="play-rock">kamień</button>
+        <button id="play-paper">papier</button> 
+        <button id="play-scisors">nożyce</button> 
+      </div>
+      <div id="messages">
+	    </div>
+    </div>
+  </secion>
+  <secion class="results">
+    <div class="container">
+	    <div class="row">
+        <div class="col-lg-4">
+          <div class="result-table player-win">
+          Player win
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="result-table computer-win">
+          Computer win
+          </div>
+        </div> 
+        <div class="col-lg-4">
+          <div class="result-table draw">
+          Draw
+          </div>
+        </div>
+      </div>
+      <div id="messages">
+	    </div>
+    </div>
+  </secion>
+  <section class="footer p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5">
+          <p class="footer-text">© Copywrite 2014 FreebiesXpress.com</p>
+        </div>
+        <div class="col-lg-7 footer-icons">
+          <div class="icon-background twitter">
+            <i class="fab fa-twitter icon-white"></i>
+          </div>
+          <div class="icon-background facebook">
+            <i class="fab fa-facebook-f icon-white"></i>
+          </div>
+          <div class="icon-backgroundwhite pinterest">
+            <i class="fab fa-pinterest icon-pinterest"></i>
+          </div>
+          <div class="icon-backgroundwhite google">
+            <i class="fab fa-google-plus icon-google"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>

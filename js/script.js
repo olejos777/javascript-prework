@@ -71,6 +71,6 @@ function buttonClickedScisors() {
   playGame(3);
 }
 
-let playScisors = document.getElementById('play-paper');
+let playScisors = document.getElementById('play-scisors');
 
 playScisors.addEventListener('click', buttonClickedScisors);
