@@ -1,13 +1,14 @@
-{function playGame(playerInput) {
-
+{ const playGame = function (playerInput){
   clearMessages();
 
-  function getMoveName(argMoveId) {
+  const getMoveName = function (argMoveId){
     if (argMoveId == 1) {
       return 'kamień';
-    } else if (argMoveId == 2) {
+    } 
+    if (argMoveId == 2) {
       return 'papier';
-    } else if (argMoveId == 3) {
+    }
+    if (argMoveId == 3) {
       return 'nożyce';
     }
 
@@ -16,31 +17,32 @@
   }
 
   const randomNumber = Math.floor(Math.random() * 3 + 1);
-
-  console.log('Wylosowana liczba to: ' + randomNumber);
-
   const computerMove = getMoveName(randomNumber);
 
   printMessage('Mój ruch to: ' + computerMove);
-
-  console.log('Gracz wpisał: ' + playerInput);
 
   const playerMove = getMoveName(playerInput);
 
   printMessage('Twój ruch to: ' + playerMove);
 
-  function displayResult(argComputerMove, argPlayerMove) {
-    console.log('wywołano displayResult')
-    console.log('ruch komputera: ' + argComputerMove + ', ' + 'ruch gracza: ' + argPlayerMove);
+  const displayResult = function (argComputerMove, argPlayerMove){
+    
     if (argPlayerMove == 'nieznany ruch') {
       return 'Wpisz wartości w przedziale 1 do 3!';
-    } else if (argComputerMove == argPlayerMove) {
+    } 
+    if (argComputerMove == argPlayerMove) {
       return 'Remis!';
-    } else if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
+    } 
+
+    if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
       return 'Ty wygrywasz!';
-    } else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
+    } 
+
+    if (argComputerMove == 'papier' && argPlayerMove == 'nożyce') {
       return 'Ty wygrywasz!';
-    } else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
+    }
+    
+    if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
       return 'Ty wygrywasz!';
     } else {
       return 'Komputer wygrywa!';
@@ -50,7 +52,8 @@
   printMessage(result);
 }
 
-function buttonClickedRock() {
+
+const buttonClickedRock = function () {
   playGame(1);
 }
 
@@ -58,8 +61,7 @@ const playRock = document.getElementById('play-rock');
 
 playRock.addEventListener('click', buttonClickedRock);
 
-
-function buttonClickedPaper() {
+const buttonClickedPaper = function () {
   playGame(2);
 }
 
@@ -67,7 +69,7 @@ const playPaper = document.getElementById('play-paper');
 
 playPaper.addEventListener('click', buttonClickedPaper);
 
-function buttonClickedScisors() {
+const buttonClickedScisors = function () {
   playGame(3);
 }
 
