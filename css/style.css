@@ -1,2 +1,14 @@
 /* Global */
+/* Splash */
+.splash {
+  padding: 0 0 48px 0;
+  border: red solid 2px;
+}
+
+.background-image {
+  background-image: url(images/Background_Image.jpg);
+  height: 500px;
+  width: 500px;
+  border: yellow solid 2px;
+}
 /*# sourceMappingURL=style.css.map */
